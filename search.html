@@ -1,0 +1,150 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Welcome Home</title>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.0.0-beta1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css" />
+
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap-theme.min.css" />
+
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+<link href="css/style.css" rel="stylesheet" type="text/css" />
+      </head>
+
+      <body>
+      <div class="container">
+        <div id="sidebar" class="navbar navbar-default navbar-static-top">
+            <div class="title">
+                <a href="http://www.css-bd.com/" target="_blank"><img src="csslogo.png" style="width:50%; margin:10px auto" class="img-responsive" /></a>
+            </div>
+          <ul class="nav">
+            <li>
+                <a href="home.html">Home</a>
+            </li>
+            <li>
+                <a href="#">About</a>
+            </li>
+            <li>
+                <a href="#">How to use</a>
+            </li>
+            <li>
+                <a href="search.html">Search</a>
+            </li>
+            <li>
+                <a href="index.html">Exit</a>
+            </li>
+        </ul>
+        </div>
+        
+        <div id="sidebarNew" class="navbarNew" style="display: none;">
+        	<div class="title">
+            	<a href="http://www.css-bd.com/" target="_blank">
+                	<img src="css/ratul.jpg" style="width:50%; margin:10px auto; height:50%" class="img-circle" />
+                </a>
+            </div>
+            <ul class="nav">
+            	<p style="color:lightgray; padding:10px">M.M. Tanjil Hasan Ratul</p>
+            </ul>
+        </div>
+        
+        <div class="main-content">
+          <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="swipe-area"></div>
+          <div class="row">
+        	<div class="col-md-2 col-sm-2 col-xs-2">
+            	<a href="#" data-toggle=".container" id="sidebar-toggle"> 
+                    <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+                </a>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-6">
+            	<center><h4 style="margin-top:10px">Find your Lawyers</h4></center>
+            </div>
+            <div class="col-md-2 col-sm-2 col-xs-4">   	
+                <div class="slideDown">                	
+                    <div class="one">
+                        <a href="#" data-toggle=".container" id="sidebarNew-toggle"> 
+                            <span class="bar"></span> <span class="bar"></span> <span class="bar"></span>
+                        </a>
+                    </div>
+                    
+        		</div>
+                
+            </div>
+        </div>
+          
+         </nav>
+          <div class="content">
+                    	<div class="col-md-9 col-sm-6 col-xs-12">
+                        	<div class="row">
+                                <div class="col-md-4 col-sm-2"></div>
+                                <div class="col-md-4 col-sm-8  col-xs-12">
+                                    <img src="css/user-icon.jpg" class="img-responsive" style="width:50%; margin:25px auto" />
+                                        <p><strong>Name of Advocate :</strong> M.M Tanjil Hasan Ratul</p>
+                                        <p><strong>Father's name :</strong> Golam Mozid Mia</p>
+                                        <p><strong>Membership no :</strong> 19444454</p>
+                                        <p><strong>BAR council SANAD no :</strong> CH-41564897</p>
+                                        <p><strong>Phone no :</strong> 01915170777</p>
+                                        <p><strong>Remarks :</strong> Good</p>
+                                </div>
+                                <div class="col-md-4 col-sm-2"></div>
+                   		 	</div>
+                        </div>
+          </div>
+          
+        </div>
+      </div>
+      <script src="http://code.jquery.com/jquery-1.11.3.min.js"></script> 
+      <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery.touchswipe/1.6.4/jquery.touchSwipe.min.js"></script> 
+      <script>
+  $(window).load(function(){
+        $("[data-toggle]").click(function() {
+          var toggle_el = $(this).data("toggle");
+          $(toggle_el).toggleClass("open-sidebar");
+        });
+		
+		
+		$("#sidebarNew-toggle").click(function() {
+			$(".container").removeClass("open-sidebar");            	
+          	//$('.navbarNew').toggle("slide");
+			$(".navbarNew").animate({width:'toggle'},350);
+				//var hidden = $('.navbarNew');
+				//hidden.toggle('slide', {direction: 'right'}, 400);
+        });
+         $(".swipe-area").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           $(".container").addClass("open-sidebar");
+                           return false;
+                      }
+                      if (phase=="move" && direction =="left") {
+                           $(".container").removeClass("open-sidebar");
+                           return false;
+                      }
+                  }
+          });
+		  
+		 /* $("body").swipe({
+              swipeStatus:function(event, phase, direction, distance, duration, fingers)
+                  {
+                      if (phase=="move" && direction =="right") {
+                           $(".container").addClass("open-sidebar");
+                           return false;
+                      }
+                      if (phase=="move" && direction =="left") {
+                           $(".container").removeClass("open-sidebar");
+                           return false;
+                      }
+                  }
+          }); 
+		  */
+      });
+</script>
+
+
+
+</body>
+</html>
+
