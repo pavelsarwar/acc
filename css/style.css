@@ -59,7 +59,7 @@ h1,h2,h3,h4,h5{ margin:10px; font-size:18px}
 #sidebarNew {
   background: #4CA7D5;
   position: absolute;
-  width: 220px;
+  width: 250px;
   height: 100%;
   right: 0;
   z-index:1;
