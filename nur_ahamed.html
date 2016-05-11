@@ -11,12 +11,7 @@
 <link href="csslogo.png" rel="icon" />
 <script src="css/bootstrap/js/bootstrap.min.js"></script>
 <link href="css/style.css" rel="stylesheet" type="text/css" />
-<style>
-	img{
-		width:80px;
-		height:100px;
-	}
-</style>
+
 <script>
 	/*$(function(){
 		var tallness = $(".description").height();
@@ -38,16 +33,7 @@
                 </a>
             </div>
           <ul class="nav">
-                <li>
-                    <form action="#" method="post">
-                    	<div class="input-group">
-                        	<input type="text" class="form-control" autofocus placeholder="Search....">
-                            <span class="input-group-btn">
-                            <button class="btn btn-default" type="button" style="color:#09F"><span class="glyphicon glyphicon-search"></span></button>
-                            </span>
-                        </div><!-- /input-group -->
-                    </form>
-                </li>
+               
                 <li>
                     <a href="index.html"><span class="glyphicon glyphicon-home"></span>&nbsp;&nbsp;&nbsp;নীড়পাতা</a>
                 </li>
@@ -64,7 +50,7 @@
                     <a href="babohar.html"><span class="glyphicon glyphicon-user"></span>&nbsp;&nbsp;&nbsp;ব্যবহার নির্দেশিকা </a>
                 </li>
                 <li>
-                    <a href="index.html"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;&nbsp;Exit</a>
+                    <a href="exit.html"><span class="glyphicon glyphicon-off"></span>&nbsp;&nbsp;&nbsp;এক্সিট</a>
                 </li>
                 
         	</ul>
@@ -120,25 +106,26 @@
             <div class="row" style="margin-top:10px">
             	<div class="col-md-12 navStacked">
                 	<div class="nav nav-default nav-stacked ui-nav">
-                    	<center><h3>নূর আহমেদ</h3></center>
+                    		<center><h3>জনাব নূর আহমেদ </h3></center>
                     </div>
                 </div>
             </div>
             <div class="row" style="height:100%">
-				<div class="col-md-4 description">
-					<center> <img src="photo/board/nur_ahmed_dg_spl._enquiry_investigation.jpg" class="img-responsive" style="margin-left:20px"><br>
+				<div class="col-md-12 description">
+                  <center> <img src="photo/board/nur_ahmed_dg_spl._enquiry_investigation.jpg" class="img-responsive" style="margin-left:20px"><br>
 					<h4>মহাপরিচালক</h4>
-					<a href="অনুসন্ধান ও তদন্ত.html">Enquiries & Investigations</a><br>
-					Call : +88028333426
-                	<address>
-                        Mail : <a href="mailto:dg.sp.investigation@acc.org.bd">dg.sp.investigation@acc.org.bd</a>
-                    </address>
+					<a href="anusondhan_and_todonto.html">অনুসন্ধান ও তদন্ত</a><br>
+					<p><span class="glyphicon glyphicon-earphone"></span> +88028333426</p>
+					<p><span class="glyphicon glyphicon-envelope"></span> dg.sp.investigation@acc.org.bd</p>
+				
 					</center>
                 </div>
                 
-                <div class="col-md-8 description">
-                   <p style="text-align:justify; margin-left:15px">					
-						<strong>নাম    :</strong> মো: নূর আহাম্মদ<br>
+			</div>
+			<div class="row">
+				
+					<p class="description">
+					               <strong>নাম    :</strong> মো: নূর আহাম্মদ<br>
 						<strong>পদবী  : </strong>মহাপরিচালক (অনুসন্ধান ও তদন্ত) <br>
 						দুর্নীতি দমন কমিশন, প্রধান কার্যালয়, ঢাকা।<br>
 						<strong>তিনি-</strong><br>
@@ -184,8 +171,6 @@
 						<strong>নিজ জেলা: </strong>গাজীপুর।<br>
 
                    </p>               	  
-                </div>
-                
 			</div>
 		  
         </div>
@@ -193,20 +178,33 @@
   
           
  <!--=============================================BOTTOM NAVBAR====================================================-->         
-          <div class="navbar navbar-default navbar-fixed-bottom" role="navigation">
+          <div class="navbar navbar-default navbar-fixed-bottom" role="navigation" data-position="fixed" style="text-align:center;">
               <div class="container">
-          			<div class="row">
-                  		<div class="col-md-5 col-sm-5 col-xs-5">
-                        	<center><a href="index.html" style="color:lightgray"><h3><span class="glyphicon glyphicon-home"></span></h3></a></center>
-                         </div>
-                         <div class="col-md-2 col-sm-2 col-xs-2">
-                                <center><h3 style="color:lightgray">|</h3></center>
-                          </div>
-                          <div class="col-md-5 col-sm-5 col-xs-5">
-                                <center><a onclick="window.history.back();" href="" style="color:lightgray"><h3><span class="glyphicon glyphicon-arrow-left"></span></h3></a></center>
-                          </div>
-                  
-                    </div><!--/.nav-collapse -->
+          			
+					<div class="row">
+        	<div class="col-md-2 col-sm-2 col-xs-2">
+            	<a href="index.html" data-toggle=".container" id="sidebar-toggle" style="margin-left:20px"> 
+                  <span class="glyphicon glyphicon-home"></span>  
+				</a>
+            </div>
+            <div class="col-md-8 col-sm-8 col-xs-8">
+            	<img style="margin-top:10px; margin-bottom:5px; max-width: 100%;" src="photo/footer.png"/>
+			</div>
+            <div class="col-md-2 col-sm-2 col-xs-2">   	
+                <div class="slideDown">                	
+                    <div class="one">
+                        <a href="exit.html" data-toggle=".container" id="sidebarNew-toggle" style="margin-right:20px"> 
+                          <span class="glyphicon glyphicon-remove"></span>
+                        </a>
+                    </div>
+                    
+        		</div>
+                
+            </div>
+        </div>
+					
+					
+				<!--/.nav-collapse -->
               </div><!--/.container -->
         </div>
 <!--=============================================BOTTOM NAVBAR====================================================-->
